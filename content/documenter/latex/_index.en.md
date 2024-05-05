@@ -51,7 +51,7 @@ mainly
 Personally, although you can write LaTeX documents with a editor like
 [TeXstudio](https://www.texstudio.org/), it is also possible to use simpler
 editors such as Nano or Vim. For my part, I use
-[my own IDE**](https://github.com/badele/vide), based on Vim, which not only
+**[my own IDE](https://github.com/badele/vide)**, based on Vim, which not only
 allows you to edit, reformat, linter and view files LaTeX documents, but also,
 thanks to Nix, to download LaTeX packages.
 

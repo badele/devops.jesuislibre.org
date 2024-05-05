@@ -41,14 +41,14 @@ bibliographiques.
 ## Pourquoi LaTeX ?
 
 En tant que **DevOps** on aime bien maitriser la génération de code, la
-génration de déploiement, la génération de documents. C'est pour cette raison
+génération de déploiement, la génération de documents. C'est pour cette raison
 que **[LaTeX](https://www.latex-project.org/)** peu être un bon outil en
-remplacment de Office ou LibreOffice.
+remplacement de Office ou LibreOffice.
 
 Sans éditeur particulier, le code d'un documents LaTeX est beaucoup plus facile
 à lire q'un document Office/LibreOffice qui sont enregistré au format
 **[Office Open XML](https://fr.wikipedia.org/wiki/Office_Open_XML)** LaTeX est
-principallement
+principalement
 
 Personnellement, bien que l'on puisse rédiger des documents LaTeX avec un
 éditeur comme [TeXstudio](https://www.texstudio.org/), il est également possible
@@ -64,11 +64,11 @@ documents LaTeX, mais également, grâce à Nix, de télécharger des packages L
 ### Le préambule
 
 Le préambule permet de configurer la forme de son document ainsi d'indiquer les
-packages supplémentaire à télécharger ainsi que de leur configuration.
+packages supplémentaires à télécharger ainsi que de leur configuration.
 
 le préambule s'insère entre le début du document et la commande
 `\begin{document}`, il permet de définir les configurations globales du
-document, telles que la classe du document, les packages à utiliser et les
+document, tel que la classe du document, les packages à utiliser et les
 métadonnées.
 
 Voici un exemple simple

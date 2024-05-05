@@ -1,0 +1,34 @@
+% Define document type and format
+% available class :article, report, book, letter, beamer
+\documentclass[draft, showframe, twocolumn, a4paper, 12pt]{article}
+\usepackage[left=0.5in, right=0.5in]{geometry}
+
+% Use french babel
+\usepackage{french}
+
+% generate a lipsum paragraph
+\usepackage{lipsum}
+
+% Set the title and author
+\title{\Huge Document sample}
+\author{Bruno Adelé}
+
+%allow underfull vbox (allow empty space at the bottom of the page
+\raggedbottom
+
+% Set the space between paragraphs
+\parskip=5pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\lipsum[3-5]
+\lipsum[12]
+
+
+\end{document}
+

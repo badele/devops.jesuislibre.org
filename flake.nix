@@ -22,6 +22,18 @@
               gum
               hugo
               just
+
+              # Latex
+              (texlive.combine {
+                inherit (texlive)
+                  scheme-medium msg tabularray ninecolors lipsum;
+              })
+              pplatex
+              texlab
+              zathura
+
+              # Convert PDF to PNG
+              ghostscript
             ];
             shellHook = ''
               export PROJ="devops.jesuislibre.org"

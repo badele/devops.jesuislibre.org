@@ -37,12 +37,39 @@ hugo-download-theme:
 @hugo-init: hugo-download-theme
     hugo new site . > /dev/null
 
+# Hugo serve the locally content
 @hugo-serve:
-    hugo serve --debug --cleanDestinationDir -D
+    GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve --debug --cleanDestinationDir -D
+
+# Hugo build the content
+hugo-build:
+    GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --cleanDestinationDir
+
+# Hugo test publish the content
+hugo-publishtest: hugo-build
+    rsync -avrn --delete public/ w4a153382@ssh.web4all.fr:/datas/vol3/w4a153382/var/www/devops.jesuislibre.org/htdocs/
+
+# Hugo publish the content
+hugo-publish: hugo-build
+    rsync -avr --delete public/ w4a153382@ssh.web4all.fr:/datas/vol3/w4a153382/var/www/devops.jesuislibre.org/htdocs/
 
 ###############################################################################
 # Tools
 ###############################################################################
+
+# Generate documentation samples
+doc-generate-tex-sample:
+    #!/usr/bin/env bash
+    find . -type f -name '*.tex' | while read file; do
+        # get file informations
+        filename=$(basename -- "$file")
+        filename="${filename%.*}"
+        dirname=$(dirname -- "$file")
+        # generate pdf
+        pdflatex --output-dir "$dirname" "$file"
+        # convert pdf to png
+        convert -background white -alpha remove -alpha off -density 150 "$dirname/$filename.pdf" "$dirname/$filename.png"
+    done
 
 # Update documentation
 @doc-update FAKEFILENAME:

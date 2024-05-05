@@ -1,0 +1,39 @@
+% Define document type and format
+% available class :article, report, book, letter, beamer
+\documentclass[a4paper, 12pt]{article}
+
+% Use french babel
+\usepackage{french}
+
+% generate a lipsum paragraph
+\usepackage{lipsum}
+
+% Set the title and author
+\title{\Huge Sections list}
+\author{Bruno Adelé}
+\date{}
+
+\newcommand{\showsize}[1]{\csname #1 \endcsname $\setminus$#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\section{Sizes}
+\noindent \showsize{tiny}
+\showsize{scriptsize}
+\showsize{footnotesize}
+\showsize{small}
+\showsize{normalsize}
+\showsize{large}
+\showsize{Large}
+\showsize{LARGE}
+\showsize{huge}
+\showsize{Huge}
+
+\section{Styles}
+\noindent \textnormal{textnormal} \emph{emph} \textrm{textrm} \textsf{textsf} \texttt{texttt} \textup{textup} \textit{textit} \textsl{textsl} \textsc{textsc} \\
+\uppercase{uppercase} \textbf{textbf} \textmd{textmd}
+
+\end{document}

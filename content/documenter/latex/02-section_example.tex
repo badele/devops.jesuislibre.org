@@ -1,0 +1,46 @@
+% Define document type and format
+% available class :article, report, book, letter, beamer
+\documentclass[a4paper, 12pt]{article}
+
+\listfiles
+
+% Use french babel
+\usepackage{french}
+
+% generate a lipsum paragraph
+\usepackage{lipsum}
+
+% Set the title and author
+\title{\Huge Sections list}
+\author{Bruno Adelé}
+\date{}
+
+%allow underfull vbox
+\raggedbottom
+
+% Set the space between paragraphs
+\parskip=5pt
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Section}
+\lipsum[1][-2]
+
+\subsection{Subsection}
+\lipsum[2][-2]
+
+\subsubsection{Subsubsection}
+\lipsum[3][-2]
+
+\subsubsection*{Section without counter}
+\addcontentsline{toc}{section}{Section without counter}
+\lipsum[4][-2]
+
+\end{document}

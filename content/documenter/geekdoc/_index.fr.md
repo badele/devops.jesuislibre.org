@@ -1,5 +1,5 @@
 ---
-title: Geekdoc
+title: geekdoc
 resources:
   - name: demo-geekdoc
     src: demo-geekdoc.gif
@@ -17,10 +17,10 @@ offrent de nombreux avantages pour la création de sites de documentation.
 
 ## Pourquoi geekdoc ?
 
-D'une part, `Geekdoc` offre une structure de navigation claire et organisée, ce
-qui permet aux utilisateurs de trouver rapidement les informations dont ils ont
-besoin, mais égallement `Geekdoc` s'appuie sur [Hugo](https://gohugo.io/), ce
-qui lui permet hériter des features suivantes :
+D'une part, [Geekdoc](https://geekdocs.de/) offre une structure de navigation
+claire et organisée, ce qui permet aux utilisateurs de trouver rapidement les
+informations dont ils ont besoin, mais égallement **Geekdoc** s'appuie sur
+[Hugo](https://gohugo.io/), ce qui lui permet hériter des features suivantes :
 
 - Support du multi-langes
 - customisation de fonction grace au shortcodes d'hugo.
@@ -29,15 +29,22 @@ qui lui permet hériter des features suivantes :
 Mais surtout grace à hugo, il est possible d'avoir un site de documentation
 statisque (pas besoin de serveur `PHP` ou `Node.js`)
 
+## Exemple d'utilisation
+
+Voici un exemple d'utilisation de ce template pour le site de documentation
+[Devops jesuislibre](https://devops.jesuislibre.org)
+
+{{< img name="demo-geekdoc" size=origin lazy=false >}}
+
 ## Installation
 
-L'installation de `Geekdoc` utilisera le trio
+L'installation de **Geekdoc** utilisera le trio
 [nix, direnv, just](/onboarding/nix-direnv-just). Ce trio permet d'installer
 automatiquement un environement de developpement ainsi qu'il facilite la
 contribution à un projet sans devoir installer les outils nécéssaire pour y
 contribuer.
 
-Donc pour installer et configurer `Geekdoc`, commencer par
+Donc pour installer et configurer **Geekdoc**, commencer par
 [installer le trio nix, direnv, just](/onboarding/nix-direnv-just).
 
 Ensuite récupérer et configurer le template `hugo-geekdoc` avec les commandes
@@ -49,10 +56,3 @@ cd geekdoc
 nix develop
 sh init_project
 ```
-
-## Exemple d'utilisation
-
-Voici un exemple d'utilisation de ce template pour le site
-[JSL Devops documentation](https://devops.jesuislibre.org)
-
-{{< img name="demo-geekdoc" size=origin lazy=false >}}

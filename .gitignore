@@ -1,11 +1,14 @@
-.decrypted*.yml
-
-# Project
-docs/nvim/tags
+public
 
 # direnv
 .direnv
 
-# Devenv
-.devenv*
-devenv.local.nix
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.log
+*.toc

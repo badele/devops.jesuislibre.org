@@ -46,7 +46,7 @@ que **[LaTeX](https://www.latex-project.org/)** peu être un bon outil en
 remplacement de Office ou LibreOffice.
 
 Sans éditeur particulier, le code d'un documents LaTeX est beaucoup plus facile
-à lire q'un document Office/LibreOffice qui sont enregistrés au format
+à lire qu'un document Office/LibreOffice qui sont enregistrés au format
 **[Office Open XML](https://fr.wikipedia.org/wiki/Office_Open_XML)** LaTeX est
 principalement
 

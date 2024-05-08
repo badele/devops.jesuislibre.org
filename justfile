@@ -68,7 +68,7 @@ doc-generate-tex-sample:
         # generate pdf
         pdflatex --output-dir "$dirname" "$file"
         # convert pdf to png
-        convert -background white -alpha remove -alpha off -density 150 "$dirname/$filename.pdf" "$dirname/$filename.png"
+        convert -background white -alpha remove -alpha off -density 150 "$dirname/$filename.pdf[0]" "$dirname/$filename.png"
     done
 
 # Update documentation

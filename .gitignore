@@ -10,5 +10,8 @@ public
 *.idx
 *.ilg
 *.ind
+*.lof
 *.log
+*.lot
 *.toc
+content/documenter/latex/*.pdf

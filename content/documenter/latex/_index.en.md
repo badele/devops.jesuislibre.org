@@ -37,6 +37,8 @@ references bibliographic.
 
 {{< /hint >}}
 
+{{< toc >}}
+
 ## Why LaTeX?
 
 As **DevOps** we like to master code generation, deployment generation, document
@@ -146,7 +148,7 @@ l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
  *****
 ```
 
-### Fonts
+### Miscellaneous
 
 - List of fonts https://tug.org/FontCatalogue/allfonts.html
 - Comprehensive LaTeX Symbol List

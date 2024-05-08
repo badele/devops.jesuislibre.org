@@ -38,6 +38,8 @@ bibliographiques.
 
 {{< /hint >}}
 
+{{< toc >}}
+
 ## Pourquoi LaTeX ?
 
 En tant que **DevOps** on aime bien maitriser la génération de code, la

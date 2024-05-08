@@ -43,4 +43,13 @@
 \addcontentsline{toc}{section}{Section without counter}
 \lipsum[4][-2]
 
+\begin{appendix}
+	\addtocontents{toc}{\setcounter{tocdepth}{2}}
+	\section{Annexes}
+	% \addcontentsline{toc}{section}{Annexes}
+	\subsection{Liste des ilustrations}
+	\listoffigures
+	\listoftables
+\end{appendix}
+
 \end{document}

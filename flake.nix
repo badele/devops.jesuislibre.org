@@ -34,6 +34,7 @@
               zathura
 
               # Convert PDF to PNG
+              imagemagick
               ghostscript
             ];
             shellHook = ''

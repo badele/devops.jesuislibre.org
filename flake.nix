@@ -22,6 +22,7 @@
               gum
               hugo
               just
+              vhs
 
               # Latex
               (texlive.combine {

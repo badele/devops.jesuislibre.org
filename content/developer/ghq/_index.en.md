@@ -29,6 +29,13 @@ going to clone your project, you just need to run
 the structure of the projects will be clearly organized in your **ghq**
 directory.
 
+Additionally, during team collaborations involving script sharing using cloned
+projects, there is no need to specify paths specific ones such as
+`/usr/local/nosprojets/xxx`. For example, it is enough to export a variable,
+like `TEAM_PROJECT=~/ghq`, for the whole team and to use this reference in your
+scripts. So you can use `$TEAM_PROJECT/mateam/monprojet/bin/monexecutable` in
+your scripts, ensuring consistency in access to shared resources.
+
 ```text
 └─ ~/ghq
    └─ github.com

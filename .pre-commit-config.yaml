@@ -48,3 +48,11 @@ repos:
         stages:
           - commit
         files: \.ts$
+      - id: cocogito
+        name: cocogito
+        description: Conventional commit
+        language: system
+        entry: cog check
+        stages:
+          - commit
+

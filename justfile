@@ -57,6 +57,11 @@ hugo-publish: hugo-build
 # Tools
 ###############################################################################
 
+# Show uniq domain links
+@show-links filename:
+    grep -Eo '(http|https)://[^ /]+' {{ filename }} | sed 's/https*:\/\///' | sort | uniq
+
+
 # Generate documentation samples
 doc-generate-tex-sample:
     #!/usr/bin/env bash

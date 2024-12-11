@@ -267,6 +267,83 @@ ip            tcp          45.45.148.7     192.168.88.22  1248bps   1728bps     
 ip            tcp          71.18.255.144   192.168.88.22  17.6kbps  51.3kbps            9          11
 ```
 
+#### System Resources
+
+Displaying router resources:
+
+```bash
+/system/resource print
+```
+
+```text
+                 uptime: 1d23h10m42s
+                version: 7.14.1 (stable)
+             build-time: 2024-03-08 12:50:23
+       factory-software: 6.44.6
+            free-memory: 906.9MiB
+           total-memory: 1024.0MiB
+                    cpu: ARM
+              cpu-count: 4
+          cpu-frequency: 533MHz
+               cpu-load: 0%
+         free-hdd-space: 418.5MiB
+        total-hdd-space: 512.0MiB
+write-sect-since-reboot: 140623
+       write-sect-total: 1569203
+             bad-blocks: 0%
+      architecture-name: arm
+             board-name: RB4011iGS+5HacQ2HnD
+               platform: MikroTik
+```
+
+#### Package Update
+
+Displaying package version and updating:
+
+```bash
+/system package update check-for-updates
+```
+
+```text
+          channel: stable
+installed-version: 7.14.1
+   latest-version: 7.16.2
+           status: New version is available
+```
+
+Installing the update:
+
+```bash
+/system package update install
+```
+
+#### RouterOS Update
+
+Displaying RouterOS version and updating:
+
+```bash
+/system routerboard print
+```
+
+```text
+     routerboard: yes
+           model: RB4011iGS+5HacQ2HnD
+        revision: r2
+   serial-number: D43B0C96671D
+   serial-number: DXXXXXXXXXXX
+   firmware-type: al2
+factory-firmware: 6.45.9
+current-firmware: 6.45.9
+upgrade-firmware: 7.16.2
+```
+
+Updating and restarting:
+
+```bash
+/system routerboard upgrade 
+/system reboot
+```
+
 ---
 
 ## Sources
